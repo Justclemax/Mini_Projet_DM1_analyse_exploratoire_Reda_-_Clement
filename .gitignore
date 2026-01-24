@@ -1,0 +1,55 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+
+# =========================
+# Jupyter / Data Science
+# =========================
+.ipynb_checkpoints
+*.ipynb
+
+# =========================
+# Logs & outputs
+# =========================
+*.log
+logs/
+
+
+# =========================
+# Tests & coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# =========================
+# Build / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# IDE / Editors
+# =========================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
