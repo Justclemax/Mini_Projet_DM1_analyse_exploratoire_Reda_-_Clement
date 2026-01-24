@@ -16,7 +16,7 @@ ENV/
 # Jupyter / Data Science
 # =========================
 .ipynb_checkpoints
-*.ipynb
+
 
 # =========================
 # Logs & outputs
