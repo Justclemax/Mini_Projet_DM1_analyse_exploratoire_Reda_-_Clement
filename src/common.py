@@ -1,7 +1,7 @@
-from typing import Any, Callable
 import functools
 import pandas as pd
-
+from typing import List, Tuple, Any, Callable
+import pandas as pd
 
 def log_outliers(func: Callable) -> Callable:
     """Décorateur pour enregistrer le nombre d'outliers supprimés par la fonction."""
@@ -43,9 +43,6 @@ def remove_outliers_iqr(df: pd.DataFrame, column: Any) -> pd.DataFrame:
     return df[(df[column] >= lower_bound) & (df[column] <= upper_bound)]
 
 
-from typing import List, Tuple
-import pandas as pd
-
 
 def identify_features(df: pd.DataFrame, target: str = "cible", threshold: int = 10) -> Tuple[List[str], List[str]]:
     """
@@ -78,4 +75,7 @@ def identify_features(df: pd.DataFrame, target: str = "cible", threshold: int = 
 
     return categorical, continuous
 
+
+def replace_name_value(feature:str, ):
+    return None
 
