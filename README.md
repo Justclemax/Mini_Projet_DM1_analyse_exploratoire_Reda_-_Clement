@@ -40,10 +40,8 @@ Mini_Projet_DM1_analyse_exploratoire_Reda_&_Clement/
 │       └── bank_clean.csv
 │
 ├── notebooks/                   # Analyses exploratoires & statistiques
-│   ├── 01_exploration_descriptive.ipynb
-│   ├── 02_statistical_analysis.ipynb
-│   ├── 03_modeling_knn.ipynb
-│   └── 04_business_insights.ipynb
+│   ├── analyse_expolratoire_&__modeling_knn.ipynb
+│   
 │
 ├── src/                         # Code Python réutilisable
 │   ├── __init__.py
@@ -102,10 +100,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 #### Puis ouvrir les notebooks dans l’ordre suivant :
-- 01_exploration_descriptive.ipynb
-- 02_statistical_analysis.ipynb 
-- 03_modeling_knn.ipynb
-- 04_business_insights.ipynb
+- analyse_expolratoire_&__modeling_knn.ipynb
 ### 6️⃣ Lancer l’application Streamlit (option bonus)
 ```
 streamlit run app.py
