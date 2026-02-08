@@ -76,7 +76,7 @@ Mini_Projet_DM1_analyse_exploratoire_Reda_&_Clement/
 
 #### Option 1 : via Git
 ```bash
-git clone <url_du_repository>
+git clone https://github.com/Justclemax/Mini_Projet_DM1_analyse_exploratoire_Reda_-_Clement.git
 cd Mini_Projet_DM1_analyse_exploratoire_Reda_&_Clement 
 ```
 
