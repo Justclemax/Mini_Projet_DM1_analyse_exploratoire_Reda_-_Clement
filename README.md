@@ -31,26 +31,37 @@ Le projet suit l’approche **CRISP-DM** :
 ```bash
 Mini_Projet_DM1_analyse_exploratoire_Reda_&_Clement/
 │
-├── data/
-│   ├── raw/                     # Données brutes
-│   │   ├── bank-additional-full.csv
-│   │   └── bank-additional-names.txt
+├── data/                           # Répertoire central des ressources
+│   ├── clean/                      # Données préparées pour le modèle
+│   │   ├── bank_marketing_clean_VF.csv
+│   │   ├── bank_marketing_clean_VF_test.csv
+│   │   ├── bank_marketing_encoded.csv
+│   │   └── bank_marketing_test_encoded.csv
 │   │
-│   └── processed/               # Données nettoyées
-│       └── bank_clean.csv
+│   ├── doc/                        # Rapport et livrables
+│   │   └── MiniProjet_DM1_analyse_exploratoire.pdf
+│   │
+│   ├── models/                     # Artefacts du Machine Learning
+│   │   ├── knn_model.pkl
+│   │   ├── knn_model_complete.pkl
+│   │   └── scaler.pkl
+│   │
+│   └── raw/                        # Sources de données originales
+│       ├── bank-full.csv
+│       ├── bank.csv
+│       └── bank-names.txt
 │
-├── notebooks/                   # Analyses exploratoires & statistiques
-│   ├── analyse_expolratoire_&__modeling_knn.ipynb
-│   
+├── notebooks/                      # Analyse et entraînement
+│   └── analyse_exploratoire_&_modeling_knn.ipynb
 │
-├── src/                         # Code Python réutilisable
+├── src/                            # Code source modulaire
 │   ├── __init__.py
-│   └── statistics.py            # Classe StatisticalTests
+│   ├── common.py                   # Détection des types de variables
+│   └── statistics.py               # Tests statistiques (ANOVA, Chi-2)
 │
-├── app.py                       # Application Streamlit
-│
-├── README.md                    # Documentation du projet
-└── requirements.txt             # Dépendances Python
+├── app.py                          # Interface de prédiction Streamlit
+├── requirements.txt                # Liste des bibliothèques nécessaires
+└── README.md                       # Documentation et mode d'emploi
 ```
 ## ▶️ Comment exécuter le projet
 
